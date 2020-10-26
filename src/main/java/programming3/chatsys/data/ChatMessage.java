@@ -8,8 +8,11 @@ public class ChatMessage {
 
     private String message;
 
-    public ChatMessage(String message) {
+    private int id;
+
+    public ChatMessage(String message, int id) {
         this.message = message;
+        this.id = id;
     }
 
     public String getMessage() {
@@ -17,20 +20,20 @@ public class ChatMessage {
     }
 
     public String format(){
-        return null;
+        return id + "," + message;
     }
 
     public void parse(String formatted){
 
     }
 
-    public void save(File filename) throws Exception{
+    public void save(File filename, String message) throws Exception{
 
         FileWriter fileWriter = new FileWriter(filename, true);
 
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
-        printWriter.println(this.message);
+        printWriter.println(message);
         printWriter.close();
     }
 

@@ -13,7 +13,7 @@ class ChatMessageTest {
 
     @BeforeEach
     void setUp() {
-        chatMessage = new ChatMessage("test");
+        chatMessage = new ChatMessage("test",001);
     }
 
     @Test
@@ -31,7 +31,7 @@ class ChatMessageTest {
 
     @Test
     void save(){
-        //chatMessage.save("messages_test.txt");
+        //chatMessage.save("messages.csv");
     }
 
     @AfterEach
