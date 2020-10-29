@@ -5,6 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.Timestamp;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ChatMessageTest {
@@ -13,7 +15,8 @@ class ChatMessageTest {
 
     @BeforeEach
     void setUp() {
-        chatMessage = new ChatMessage("test",001);
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        chatMessage = new ChatMessage("test","ghost", 001, timestamp);
     }
 
     @Test

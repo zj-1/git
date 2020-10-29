@@ -1,18 +1,48 @@
 package programming3.chatsys.data;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.PrintWriter;
+import java.sql.Timestamp;
 
 public class ChatMessage {
 
-    private String message;
+    private String message, user;
 
     private int id;
 
-    public ChatMessage(String message, int id) {
+    private Timestamp creationTime;
+
+    public ChatMessage(String message, String user, int id, Timestamp creationTime) {
         this.message = message;
+        this.user = user;
         this.id = id;
+        this.creationTime = creationTime;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setCreationTime(Timestamp creationTime) {
+        this.creationTime = creationTime;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Timestamp getCreationTime() {
+        return creationTime;
     }
 
     public String getMessage() {
@@ -20,21 +50,7 @@ public class ChatMessage {
     }
 
     public String format(){
-        return id + "," + message;
-    }
-
-    public void parse(String formatted){
-
-    }
-
-    public void save(File filename, String message) throws Exception{
-
-        FileWriter fileWriter = new FileWriter(filename, true);
-
-        PrintWriter printWriter = new PrintWriter(fileWriter);
-
-        printWriter.println(message);
-        printWriter.close();
+        return id + "," + user + "," + creationTime + "," + message;
     }
 
 }
