@@ -37,6 +37,7 @@ public class UserInformation {
         return password;
     }
 
+    // turn the form of user to database form
     public String format(){
         return id + "," + name + "," + password;
     }
