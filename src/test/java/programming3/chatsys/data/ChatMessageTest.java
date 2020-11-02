@@ -16,7 +16,7 @@ class ChatMessageTest {
     @BeforeEach
     void setUp() {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        chatMessage = new ChatMessage("test","ghost", 001, timestamp);
+        chatMessage = new ChatMessage("test","ghost",timestamp);
     }
 
     @Test

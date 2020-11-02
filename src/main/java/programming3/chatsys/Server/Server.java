@@ -1,9 +1,8 @@
 package programming3.chatsys.Server;
+import programming3.chatsys.data.Database;
 import programming3.chatsys.data.UserInformation;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -15,10 +14,36 @@ public class Server {
         {
             //accept information of user
             Socket socket=server.accept();
-            //using invoke function
-            invoke(socket);
+            if (login(socket)){
+                //using invoke function
+                invoke(socket);
+            }
+
         }
     }
+
+    private static boolean login(final Socket socket) throws IOException {
+        Database database = new Database();
+
+        DataOutputStream outputAskID= new DataOutputStream(socket.getOutputStream());
+        outputAskID.writeUTF("User ID: ");
+
+        DataInputStream inputID = new DataInputStream(socket.getInputStream());
+        int id = Integer.parseInt(inputID.readUTF());
+
+        DataOutputStream outputAskPassword = new DataOutputStream(socket.getOutputStream());
+        outputAskPassword.writeUTF("Password: ");
+
+        DataInputStream inputPassword = new DataInputStream(socket.getInputStream());
+        String password = inputPassword.readUTF();
+
+        DataOutputStream outputName = new DataOutputStream(socket.getOutputStream());
+        outputName.writeUTF(database.getUserByID(database.readUsers(), id).getName());
+
+        return database.findUser(database.readUsers(), id, password);
+
+    }
+
     private static void invoke(final Socket socket) throws IOException
     {
         //creat a new thread
@@ -65,7 +90,7 @@ public class Server {
                     catch(Exception ex){}
                 }
             }
-        }).start();
+       }).start();
 
     }
 }

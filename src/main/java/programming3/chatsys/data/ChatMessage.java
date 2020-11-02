@@ -6,14 +6,11 @@ public class ChatMessage {
 
     private String message, user;
 
-    private int id;
-
     private Timestamp creationTime;
 
-    public ChatMessage(String message, String user, int id, Timestamp creationTime) {
+    public ChatMessage(String message, String user, Timestamp creationTime) {
         this.message = message;
         this.user = user;
-        this.id = id;
         this.creationTime = creationTime;
     }
 
@@ -25,20 +22,12 @@ public class ChatMessage {
         this.user = user;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setCreationTime(Timestamp creationTime) {
         this.creationTime = creationTime;
     }
 
     public String getUser() {
         return user;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public Timestamp getCreationTime() {
@@ -50,7 +39,7 @@ public class ChatMessage {
     }
 
     public String format(){
-        return id + "," + user + "," + creationTime + "," + message;
+        return user + "," + creationTime + "," + message;
     }
 
 }

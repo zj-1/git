@@ -19,7 +19,7 @@ class DatabaseTest {
     @BeforeEach
     void prepare(){
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        chatMessage = new ChatMessage("test","Jhon",0001,timestamp);
+        chatMessage = new ChatMessage("test","Jhon",timestamp);
     }
 
     @Test
@@ -36,8 +36,10 @@ class DatabaseTest {
     }
 
     @Test
-    void addUser(){
-
+    void addUser() throws IOException {
+        UserInformation user = new UserInformation(1010,"evan","root");
+        database = new Database();
+        database.addUser(user);
     }
 
     @Test

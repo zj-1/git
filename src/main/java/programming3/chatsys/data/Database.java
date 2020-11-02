@@ -19,7 +19,7 @@ public class Database {
         while ((str = in.readLine()) != null) {
             chatData = str.split(",");
             time = Timestamp.valueOf(chatData[2]);
-            ChatMessage chatMessage = new ChatMessage(chatData[3],chatData[1],Integer.parseInt(chatData[0]),time);
+            ChatMessage chatMessage = new ChatMessage(chatData[3],chatData[1],time);
             chatMessages.add(chatMessage);
         }
 
@@ -59,5 +59,35 @@ public class Database {
 
         printWriter.println(userInformation.format());
         printWriter.close();
+    }
+
+    public UserInformation getUserByID(ArrayList<UserInformation> users, int id){
+        UserInformation user = new UserInformation();
+
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getId() == id){
+                user = users.get(i);
+            }
+        }
+
+        return user;
+    }
+
+    public boolean findUser(ArrayList<UserInformation> readUsers, int id, String passWord){
+        boolean isFound = false;
+        for (UserInformation readUser : readUsers) {
+            if (readUser.getId() == id) {
+                System.out.println("User is found");
+                if (readUser.getPassword().equals(passWord)) {
+                    System.out.println("Welcome");
+                    isFound = true;
+                } else {
+                    System.out.println("pass word is wrong");
+                }
+            } else {
+                System.out.println("Cannot find this user");
+            }
+        }
+        return isFound;
     }
 }
