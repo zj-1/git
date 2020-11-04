@@ -18,8 +18,8 @@ public class Database {
 
         while ((str = in.readLine()) != null) {
             chatData = str.split(",");
-            time = Timestamp.valueOf(chatData[2]);
-            ChatMessage chatMessage = new ChatMessage(chatData[3],chatData[1],time);
+            time = Timestamp.valueOf(chatData[1]);
+            ChatMessage chatMessage = new ChatMessage(chatData[2],chatData[0],time);
             chatMessages.add(chatMessage);
         }
 

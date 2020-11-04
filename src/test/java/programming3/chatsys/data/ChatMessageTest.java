@@ -12,11 +12,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class ChatMessageTest {
 
     ChatMessage chatMessage;
+    Timestamp timestamp;
 
     @BeforeEach
     void setUp() {
-        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        timestamp = new Timestamp(System.currentTimeMillis());
         chatMessage = new ChatMessage("test","ghost",timestamp);
+    }
+
+    @Test
+    void fromStringToChatMessage(){
+        timestamp = new Timestamp(System.currentTimeMillis());
+        String test = "hello,evan," + timestamp.toString();
+        chatMessage = new ChatMessage(test);
     }
 
     @Test

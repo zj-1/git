@@ -14,6 +14,14 @@ public class ChatMessage {
         this.creationTime = creationTime;
     }
 
+    public ChatMessage(String message){
+        String[] chatData = message.split(",");
+        Timestamp time = Timestamp.valueOf(chatData[2]);
+        this.message = chatData[0];
+        this.user = chatData[1];
+        this.creationTime = time;
+    }
+
     public void setMessage(String message) {
         this.message = message;
     }
