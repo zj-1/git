@@ -24,17 +24,22 @@ public class Client1 {
 
     }
 
-    private static String sendMessage(Socket socket, UserInformation user) throws IOException {
+    private static void sendMessage(Socket socket, UserInformation user) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String message = scanner.nextLine();
         Timestamp time = new Timestamp(System.currentTimeMillis());
         String send = message + "," + user.getName() + "," + time.toString();
+
+        // record the message which will be sent
+        lastChat = time.toString() + ", " +
+                user.getName() + ": " +
+                message;
+
         DataOutputStream outChat = null;
         outChat = new DataOutputStream(socket.getOutputStream());
         outChat.writeUTF(send);
         outChat.flush();
 
-        return send;
     }
 
     private static void sendThread(final Socket socket, final UserInformation user) throws IOException {
@@ -44,7 +49,7 @@ public class Client1 {
                 // send message to server
                 try {
                     do {
-                        lastChat = sendMessage(socket,user);
+                        sendMessage(socket,user);
                     }while (true);
 
                 } catch (IOException e) {

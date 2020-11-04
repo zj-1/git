@@ -22,36 +22,22 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278c34b1-b69a-4142-a669-72cf07dee239" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Server/Server$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/data/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/data/ChatMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/data/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programming3/chatsys/Client/Client2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/programming3/chatsys/data/ChatMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/programming3/chatsys/data/ChatMessageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Server/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/data/ChatMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/data/ChatMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/data/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/data/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/programming3/chatsys/data/ChatMessageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/programming3/chatsys/data/ChatMessageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/programming3/chatsys/Client/Client1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +103,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="programming3.chatsys.data" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="programming3.chatsys.Client" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="programming3.chatsys.Client" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Client2">
@@ -164,15 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,7 +240,10 @@
       <workItem from="1604380562802" duration="12709000" />
       <workItem from="1604407644192" duration="43000" />
       <workItem from="1604409642179" duration="5863000" />
-      <workItem from="1604456252797" duration="2132000" />
+      <workItem from="1604456252797" duration="2721000" />
+      <workItem from="1604460091807" duration="486000" />
+      <workItem from="1604465213141" duration="519000" />
+      <workItem from="1604468872142" duration="2394000" />
     </task>
     <task id="LOCAL-00001" summary="add database function to exchange with sample database messages.csv. And develop the ChatMessage function">
       <created>1603702062633</created>
@@ -286,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604322808558</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.change some bug: user cannot login, client cannot communicate with other clients&#10;2.add a function which is make string into ChatMessage to ChatMessage class&#10;3.add another client server for test and these two client server can communicate each other&#10;4.change thread structure of Server: one thread for send, and one thread for get messages&#10;5.client can get all history message at connect server and then get any unread message. Client class also has two thread that one for send and one for get">
+      <created>1604458496038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604458496038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +297,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -326,6 +320,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1.change some bug: user cannot login, client cannot communicate with other clients&#10;2.add a function which is make string into ChatMessage to ChatMessage class&#10;3.add another client server for test and these two client server can communicate each other&#10;4.change thread structure of Server: one thread for send, and one thread for get messages&#10;5.client can get all history message at connect server and then get any unread message. Client class also has two thread that one for send and one for get" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="594" y="211" key="#Inspections" timestamp="1604458491065">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="594" y="211" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1604458491065" />
     <state x="2052" y="382" key="#SQL_Dialects" timestamp="1603953741541">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -358,26 +356,26 @@
     <state x="617" y="448" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1604148453952" />
     <state x="2537" y="448" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604144211692" />
     <state x="721" y="266" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604391536365" />
-    <state width="1872" height="295" key="GridCell.Tab.0.bottom" timestamp="1604458447110">
+    <state width="1872" height="295" key="GridCell.Tab.0.bottom" timestamp="1604460577224">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604415598400" />
-    <state width="1872" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604458447110" />
-    <state width="1872" height="295" key="GridCell.Tab.0.center" timestamp="1604458447110">
+    <state width="1872" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604460577224" />
+    <state width="1872" height="295" key="GridCell.Tab.0.center" timestamp="1604460577224">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604415598400" />
-    <state width="1872" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604458447110" />
-    <state width="1872" height="295" key="GridCell.Tab.0.left" timestamp="1604458447110">
+    <state width="1872" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604460577224" />
+    <state width="1872" height="295" key="GridCell.Tab.0.left" timestamp="1604460577223">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604415598400" />
-    <state width="1872" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604458447110" />
-    <state width="1872" height="295" key="GridCell.Tab.0.right" timestamp="1604458447110">
+    <state width="1872" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604460577223" />
+    <state width="1872" height="295" key="GridCell.Tab.0.right" timestamp="1604460577224">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604415598400" />
-    <state width="1872" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604458447110" />
+    <state width="1872" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604460577224" />
     <state width="1872" height="299" key="GridCell.Tab.1.bottom" timestamp="1604407584749">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -402,11 +400,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2411" y="165" width="1107" height="750" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603954953356" />
-    <state x="2480" y="266" key="Vcs.Push.Dialog.v2" timestamp="1604145932792">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="560" y="266" key="Vcs.Push.Dialog.v2" timestamp="1604458545309">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="2480" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604145932792" />
-    <state x="560" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603962178127" />
+    <state x="560" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604458545309" />
     <state x="2777" y="398" width="637" height="311" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1603954385256">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
